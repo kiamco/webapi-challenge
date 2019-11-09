@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    -routes, middleware
+
 - [ ] Describe Middleware?
+
+    -its code that lies between the database and api route
 
 - [ ] Describe a Resource?
 
+    - its data
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    -success:true
+
 - [ ] How can we partition our application into sub-applications?
+
+    -server, route and middlware directories
 
 ## Project Setup
 

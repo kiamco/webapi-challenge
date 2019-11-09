@@ -12,3 +12,19 @@ I need this code, just don't know where, perhaps should make some middleware, do
 
 Go code!
 */
+const express = require('express');
+const server = express();
+const ActionRoute = require('./data/route/actionRoute.js');
+const ProjectRoute = require('./data/route/projectRoute');
+
+server.use(express.json());
+server.use('/api/action', ActionRoute);
+server.use('/api/project', ProjectRoute);
+
+server.get('/', (req, res) => {
+    res.send(`<h1>Api is working </h1>`);
+})
+
+server.listen(8000, () => {
+    console.log("listening on port 8000");
+})
